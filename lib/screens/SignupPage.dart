@@ -22,7 +22,7 @@ class _SignupState extends State<SignupPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Signup Page'),),
-      body: SafeArea(child: Column(    
+      body: SafeArea(child: ListView(    
         children: <Widget>[
           //==========================================================================
           // 1) TEXTBOX 

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hellotest04/screens/RegisterProduct.dart';
 import 'package:hellotest04/screens/SearchPage.dart';
+import 'package:hellotest04/screens/SearchProductPage.dart';
 import 'package:hellotest04/screens/SignupPage.dart';
 
 void main() {
@@ -113,9 +115,10 @@ class _MyHomePageState extends State<MyHomePage> {
             // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => LayoutPage()),);}, child: Text('Layout Page'),),   
             // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => StackPage()),);}, child: Text('Stack Page'),),    
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SearchPage(username: 'traitet@gmail.com',)),);}, child: Text('Search Page'),),    
-            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SignupPage()),);}, child: Text('Signup Page'),),    
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SignupPage()),);}, child: Text('Signup Page'),),   
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterProductPage()),);}, child: Text('Register Product Page'),),   
             // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SetDBFoodMenuPage()),);}, child: Text('Register Food Menu Page'),),                                                            
-            // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SearchFoodMenuPage(username: 'traitet@gmail.com',)),);}, child: Text('Search Food Menu Page'),),       
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SearchProductPage(username: 'traitet@gmail.com',)),);}, child: Text('Search Food Menu Page'),),       
             // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => UploadImagePage()),);}, child: Text('Upload Image'),),         
             // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()),);}, child: Text('Login'),),           
             //RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => MySignUpPage()),);}, child: Text('My Sign-up (google)'),),      
