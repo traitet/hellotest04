@@ -12,8 +12,8 @@ class SearchProductDetailPage extends StatefulWidget {
   //========================================================================================
   // DECLARE VAIRABLE (PRODUCTION NAME, PRODUCTION DESCRIPTION) ??? WIDGET.pdname
   //========================================================================================
-  final String username;
-  SearchProductDetailPage({Key key, @required this.username})
+  final String id;
+  SearchProductDetailPage({Key key, @required this.id})
       : super(key: key);
 
   @override
@@ -28,7 +28,7 @@ class _SearchProductDetailPageState extends State<SearchProductDetailPage> {
   String _name;
   String _description;
   String _remark;
-  double _price;
+ // double _price;
 
 //========================================================================================
 // 4) GET DATA FROM DB ?? YES
@@ -37,14 +37,14 @@ class _SearchProductDetailPageState extends State<SearchProductDetailPage> {
   void initState() {
     super.initState();
     Firestore.instance
-        .collection("TM_FOOD_MENU")
-        .document(widget.username) 
+        .collection("product")
+        .document(widget.id) 
         .get()
         .then((value) {
       setState(() {
         _id = value.data["id"];
         _name = value.data["name"];
-        _price = value.data["price"];
+        //_price = value.data["price"];
         _description = value.data["description"];
         _remark = value.data["remark"];
       });
@@ -60,7 +60,7 @@ class _SearchProductDetailPageState extends State<SearchProductDetailPage> {
 // 5) APP BAR
 //========================================================================================      
       appBar: AppBar(
-        title: Text(widget.username),
+        title: Text(widget.id),
         backgroundColor: Colors.blue,
       ),
 //========================================================================================
@@ -77,7 +77,7 @@ class _SearchProductDetailPageState extends State<SearchProductDetailPage> {
  //========================================================================================
 // 8) SHOW WIDGET.PRNAME
 //========================================================================================                
-              widget.username??'',      //??? WHERE FROM
+              widget.id??'',      //??? WHERE FROM
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             Padding(
@@ -85,7 +85,7 @@ class _SearchProductDetailPageState extends State<SearchProductDetailPage> {
             ),
             Text( _id??'', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
             Text( _name??'', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),   
-            Text( _price??'', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+            //Text( _price??'', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
             Text( _description??'', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),  
             Text( _remark??'', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),                      
           ],

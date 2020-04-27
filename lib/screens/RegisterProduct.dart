@@ -19,6 +19,8 @@ class _RegisterProductPageState extends State<RegisterProductPage> {
   final _remarkController = TextEditingController();    
   final _priceController = TextEditingController();  
 
+ 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,4 +63,6 @@ class _RegisterProductPageState extends State<RegisterProductPage> {
       ),
     );
   }
+
+
 }

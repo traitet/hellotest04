@@ -37,7 +37,7 @@ class _SearchProductPageState extends State<SearchProductPage> {
       // APP BAR
       //==================================================================================
         appBar: AppBar(
-          title: Text("User in System"),
+          title: Text("Product in System"),
         ),
       //==================================================================================
       // BODY
@@ -46,7 +46,7 @@ class _SearchProductPageState extends State<SearchProductPage> {
       //==================================================================================
       // GET DATA FROM API
       //==================================================================================          
-          stream: Firestore.instance.collection("TM_FOOD_MENU").snapshots(),
+          stream: Firestore.instance.collection("product").snapshots(),
           builder: (context, snapshot) {
             //============================================================================
             // IF NO DATA
@@ -89,7 +89,7 @@ class _SearchProductPageState extends State<SearchProductPage> {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) => SearchProductDetailPage( 
-                                          username: snapshot
+                                          id: snapshot
                                               .data.documents[index].documentID,
                                         )));
                           },                   

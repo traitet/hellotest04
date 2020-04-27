@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "595456431422",
-    "firebase_url": "https://hellotest03-e0fbb.firebaseio.com",
-    "project_id": "hellotest03-e0fbb",
-    "storage_bucket": "hellotest03-e0fbb.appspot.com"
+    "project_number": "1053317924295",
+    "firebase_url": "https://hellotest04-fc89e.firebaseio.com",
+    "project_id": "hellotest04-fc89e",
+    "storage_bucket": "hellotest04-fc89e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:595456431422:android:dcf57441c5e2882f71086f",
+        "mobilesdk_app_id": "1:1053317924295:android:b09713c4413f3e0cb8c5e2",
         "android_client_info": {
-          "package_name": "com.example.hellotest03"
+          "package_name": "com.example.hellotest04"
         }
       },
       "oauth_client": [
         {
-          "client_id": "595456431422-j3enflfarebr9nsu1srv3jm5a932s2i7.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.hellotest03",
-            "certificate_hash": "6ef47224ff0bffa990409d403c1dfd8affbac738"
-          }
-        },
-        {
-          "client_id": "595456431422-jjk2g8d1hebbtenpmrnfq54kk2la29en.apps.googleusercontent.com",
+          "client_id": "1053317924295-0dbadob816rrb8fmgnbct94r1qi0p25k.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB3IhugnGoX0kDN4JBngANYqwFz4vbwd6k"
+          "current_key": "AIzaSyCiy9gd28elCOBTgbfnpG0nLL7_XYtKL4I"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "595456431422-jjk2g8d1hebbtenpmrnfq54kk2la29en.apps.googleusercontent.com",
+              "client_id": "1053317924295-0dbadob816rrb8fmgnbct94r1qi0p25k.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -45,7 +45,7 @@ android {
         //=========================================================
         // 1) COPY APP ID TO FIREBASE WEB
         //=========================================================        
-        applicationId "com.example.hellotest03"
+        applicationId "com.example.hellotest04"
         //applicationId "com.example.hellotest04"
         minSdkVersion 16
         targetSdkVersion 28
