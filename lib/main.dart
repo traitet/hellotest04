@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hellotest04/screens/CallApiDogPage.dart';
 import 'package:hellotest04/screens/CallApiUserPage.dart';
+import 'package:hellotest04/screens/Ep2Page.dart';
+import 'package:hellotest04/screens/Ep4Page.dart';
 import 'package:hellotest04/screens/RegisterProduct.dart';
 import 'package:hellotest04/screens/SearchPage.dart';
 import 'package:hellotest04/screens/SearchProductPage.dart';
@@ -129,8 +131,8 @@ class _MyHomePageState extends State<MyHomePage> {
             // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()),);}, child: Text('Login'),),           
             //RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => MySignUpPage()),);}, child: Text('My Sign-up (google)'),),      
             // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => MyResetPasswordPage()),);}, child: Text('My Reset Password (google)'),), 
-
-
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Ep2Page()),);}, child: Text('EP2'),),    
+          RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Ep4Page()),);}, child: Text('EP4'),),   
 
 
             Text(
