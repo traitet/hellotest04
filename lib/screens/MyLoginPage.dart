@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:hellotest04/main.dart';
+// import 'package:hellotest04/main.dart';
 import 'package:hellotest04/services/LoggerService.dart';
 import 'package:hellotest04/screens/MySignUpPage.dart';
 // REF: https://benzneststudios.com/blog/flutter/firebase-auth-in-flutter/
@@ -187,18 +187,18 @@ class _MyLoginPageState extends State<MyLoginPage> {
   // FUNCTION#2: CHECK AUTHEN (USE FOR FIRST PAGE)
   //============================================================================== 
   Future checkAuth(BuildContext context) async {
-      FirebaseUser user = await _auth.currentUser();
-      if (user != null) {
-        logger.i("Already singed-in");
-        Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => MyApp()));
-      }
-      else {
-               logger.i("Redirect to login");
-        // Navigator.pushReplacement(
-        //     context, MaterialPageRoute(builder: (context) => MyLoginPage()));               
+      // FirebaseUser user = await _auth.currentUser();
+      // if (user != null) {
+      //   logger.i("Already singed-in");
+      //   Navigator.pushReplacement(
+      //       context, MaterialPageRoute(builder: (context) => MyApp()));
+      // }
+      // else {
+      //          logger.i("Redirect to login");
+      //   // Navigator.pushReplacement(
+      //   //     context, MaterialPageRoute(builder: (context) => MyLoginPage()));               
                
-      }
+      // }
     }
 
 Widget buildOtherLine() {
