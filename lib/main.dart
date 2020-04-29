@@ -3,14 +3,18 @@ import 'package:hellotest04/screens/CallApiDogPage.dart';
 import 'package:hellotest04/screens/CallApiUserPage.dart';
 import 'package:hellotest04/screens/Ep2Page.dart';
 import 'package:hellotest04/screens/Ep4Page.dart';
+import 'package:hellotest04/screens/MySignUpPage.dart';
+import 'package:hellotest04/screens/ReadQRPage.dart';
 import 'package:hellotest04/screens/RegisterProduct.dart';
+import 'package:hellotest04/screens/STFWidget.dart';
+import 'package:hellotest04/screens/STLPage.dart';
 import 'package:hellotest04/screens/SearchPage.dart';
 import 'package:hellotest04/screens/SearchProductPage.dart';
 import 'package:hellotest04/screens/SignupPage.dart';
 import 'package:hellotest04/screens/StackPage.dart';
 import 'package:hellotest04/screens/UploadImagePage.dart';
-
-
+import 'package:hellotest04/screens/MyResetPasswordPage.dart';
+import 'package:hellotest04/screens/MyLoginPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -118,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
             //================================================================  
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => CallApiUserPage()),);}, child: Text('Call Api User'),),   
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => CallApiDogPage()),);}, child: Text('Call Api Dog'),),      
-            // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => ReadQRPage()),);}, child: Text('Read QR'),),        
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => ReadQRPage()),);}, child: Text('Read QR'),),        
             // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => MenuPage(username: 'traitet@gmail.com',)),);}, child: Text('Menu Page'),),
             // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => LayoutPage()),);}, child: Text('Layout Page'),),   
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => StackPage()),);}, child: Text('Stack Page'),),    
@@ -128,13 +132,13 @@ class _MyHomePageState extends State<MyHomePage> {
             // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SetDBFoodMenuPage()),);}, child: Text('Register Food Menu Page'),),                                                            
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SearchProductPage(username: 'traitet@gmail.com',)),);}, child: Text('Search Product Page'),),       
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => UploadImagePage()),);}, child: Text('Upload Image 1234'),),         
-            // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()),);}, child: Text('Login'),),           
-            //RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => MySignUpPage()),);}, child: Text('My Sign-up (google)'),),      
-            // RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => MyResetPasswordPage()),);}, child: Text('My Reset Password (google)'),), 
-            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Ep2Page()),);}, child: Text('EP2'),),    
-          RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Ep4Page()),);}, child: Text('EP4'),),   
-
-
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => MyLoginPage()),);}, child: Text('My Login'),),           
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => MySignUpPage()),);}, child: Text('My Sign-up (google)'),),      
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => MyResetPasswordPage()),);}, child: Text('My Reset Password (google)'),), 
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Ep2Page()),);}, child: Text('EP2-Layout Stateless'),),    
+          RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Ep4Page()),);}, child: Text('EP4-Statefull & List'),),   
+          RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => STLPage()),);}, child: Text('Stateless Page'),),   
+          RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => STFPage()),);}, child: Text('Statefull Widget Page'),), 
             Text(
               'You have pushed the button this many times:',
             ),
