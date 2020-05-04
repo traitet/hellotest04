@@ -3,7 +3,7 @@ import 'package:hellotest04/screens/FlutterImagePickerPage.dart';
 import 'package:hellotest04/screens/SetDBFoodMenuPage.dart';
 import 'package:hellotest04/screens/UploadImagePage.dart';
 import 'package:hellotest04/screens_seedoc/DDocViewPage.dart';
-import 'package:hellotest04/screens_seedoc/DSearchDocPage.dart';
+import 'package:hellotest04/screens_seedoc/DDocSearchPage.dart';
 import 'package:hellotest04/screens_seedoc/DDocCreatePage.dart';
 import 'package:hellotest04/screens_seedoc/DLoginPage.dart';
 // import 'package:hellotest04/screens_seedoc/DSignUpPage.dart';
@@ -42,7 +42,7 @@ class _DCardMenuState extends State<DCardMenu> {
           makeDashboardItem(context, "View Document", Icons.view_list,
               MaterialPageRoute(builder: (context) => DDocViewPage(docid: "",))),
           makeDashboardItem(context, "Search Document", Icons.search,
-              MaterialPageRoute(builder: (context) => DSearchDocPage())),
+              MaterialPageRoute(builder: (context) => DDocSearchPage(docid: "",))),
           makeDashboardItem(context, "Profile", Icons.verified_user,
               MaterialPageRoute(builder: (context) => DEditProfilePage())),
           makeDashboardItem(context, "Logout", Icons.exit_to_app,

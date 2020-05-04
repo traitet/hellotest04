@@ -1,3 +1,4 @@
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:hellotest04/services/LoggerService.dart';
@@ -6,71 +7,63 @@ import 'package:hellotest04/services/ShowNotification.dart';
 //==========================================================================================
 // 1) MAIN CLASS
 //==========================================================================================
-class DDocViewPage extends StatefulWidget {
+class DDocSearchDetailPage extends StatefulWidget {
   //========================================================================================
   // DECLARE VARIABLE
   //========================================================================================
   final String docid;
-  DDocViewPage({Key key, @required this.docid}) : super(key: key);
+  DDocSearchDetailPage({Key key, @required this.docid})
+      : super(key: key);
   //========================================================================================
   // OVERRIDE
   //========================================================================================
   @override
-  _DDocViewPageState createState() => _DDocViewPageState();
+  _DDocSearchDetailPageState createState() => _DDocSearchDetailPageState();
 }
 
 //==========================================================================================
 // 2) STATE CLOASS
 //==========================================================================================
-class _DDocViewPageState extends State<DDocViewPage> {
-  //========================================================================================
-  // 2) DECLARE VARIABLE (DATA FROM DB)
-  //========================================================================================
-  String _docid;
+class _DDocSearchDetailPageState extends State<DDocSearchDetailPage> {
+  String _docid = "Please wait...";
+  String _username = "";
   String _title;
-  String _username;
 
+//==========================================================================================
+// 4) GET DATA FROM DB 
+//==========================================================================================
   @override
-  //========================================================================================
-  // 3) INIT: GET DATA FROM DB
-  //========================================================================================
   void initState() {
     super.initState();
     Firestore.instance
-        .collection('TT_DOCUMENT')
-        .document(widget.docid)
+        .collection("TT_DOCUMENT")
+        .document(widget.docid) 
         .get()
         .then((value) {
-      //===================================================================================
-      // 3.1) AFTER GET DATA
-      //===================================================================================
       setState(() {
-        _username = value.data['username'];
-        _docid = value.data['docid'];
-        _title = value.data['title'];
+        _docid = value.data["docid"];
+        _title = value.data["titile"];
+        _username = value.data["username"];
       });
     });
   }
-
-  //===================================================================================
-  // 4) BUILD UI
-  //===================================================================================
+  //========================================================================================
+  // 4) GEN UI
+  //========================================================================================
   @override
   Widget build(BuildContext context) {
-    //=================================================================================
-    // SCAFFOLD
-    //=================================================================================
     return Scaffold(
-      //===============================================================================
-      // APP BAR
-      //===============================================================================
+      //========================================================================================
+      // 5) APP BAR
+      //========================================================================================      
       appBar: AppBar(
-        title: Text("View Doc: " + widget.docid),
-        actions: <Widget>[
+        title: Text('View Doc: ' + widget.docid,),
+        backgroundColor: Colors.blue,
+                actions: <Widget>[
           IconButton(
               icon: Icon(Icons.camera_alt),
               onPressed: () {
-                fnScan(context);
+                // fnScan(context);
               })
         ],
       ),
@@ -134,9 +127,9 @@ class _DDocViewPageState extends State<DDocViewPage> {
           ),
         ),
       ),
-      //===============================================================================
-      // BODY
-      //===============================================================================
+      //========================================================================================
+      // 6) BODY
+      //========================================================================================      
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView(
@@ -195,36 +188,9 @@ void fnApprove(BuildContext context, String myDocId) {
   logger.i("Approve Success");
 }
 
-//======================================================
-// FUNCTION SCAN
-//======================================================
-void fnScan(BuildContext context) {
-  showMessageBox(context, "success", "Please take photo of your document",
-      actions: [dismissButton(context)]);
-  logger.i("Taking photo Success");
-}
-
 //**************************************************************************************************************************/
-// WIDGET
+// BUILD WIDGET
 //**************************************************************************************************************************/
-//======================================================
-// WIDGET: BUTTOM BUTTON BAR
-//======================================================
-Column columnButtomButtonBar(BuildContext context, myIconData, String myLabel) {
-  return Column(
-    children: <Widget>[
-      IconButton(
-        iconSize: 30.0,
-        icon: Icon(myIconData),
-        onPressed: () {},
-      ),
-      Text(
-        myLabel,
-      )
-    ],
-  );
-}
-
 //======================================================
 // WIDGET:IMAGE BODY WIDGET
 //======================================================
@@ -233,7 +199,6 @@ Widget widgetBodyImage() => Padding(
       child: Image.asset('assets/images/bg01.jpg',
           width: 300, height: 200, fit: BoxFit.cover),
     );
-
 //======================================================
 // WIDGET: BODY TEXT
 //======================================================

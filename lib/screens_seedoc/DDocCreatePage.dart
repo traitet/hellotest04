@@ -19,7 +19,7 @@ class _DDocCreatePageState extends State<DDocCreatePage> {
   //====================================================================================
   // 1) DECLARE VARIABLE FOR CONTROLLER
   //====================================================================================
-  final _docIdController = TextEditingController()..text = "D2000001";
+  final _docIdController = TextEditingController()..text = "D2000002";
   final _usernameController = TextEditingController()..text = "traitet";
   final _docTitleController = TextEditingController()..text = "Petty Cash";
   //====================================================================================

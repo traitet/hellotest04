@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hellotest04/screens_seedoc/DSearchDocPage.dart';
+import 'package:hellotest04/screens_seedoc/DDocSearchPage.dart';
 import 'package:hellotest04/screens_seedoc/DDocViewPage.dart';
 import 'package:hellotest04/screens_seedoc/DDocCreatePage.dart';
 import 'package:hellotest04/screens_seedoc/DLoginPage.dart';
@@ -59,7 +59,7 @@ class _DNavDrawerState extends State<DNavDrawer> {
               Icon(Icons.view_list)),
           BuildListTile(
               "Search Document",
-              MaterialPageRoute(builder: (context) => DSearchDocPage()),
+              MaterialPageRoute(builder: (context) => DDocSearchPage(docid: "",)),
               Icon(Icons.search)),
           BuildListTile(
               "Profile",
