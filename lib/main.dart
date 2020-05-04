@@ -16,13 +16,14 @@ import 'package:hellotest04/screens/UploadImagePage.dart';
 import 'package:hellotest04/screens/MyResetPasswordPage.dart';
 import 'package:hellotest04/screens/MyLoginPage.dart';
 import 'package:hellotest04/screens_seedoc/DLoginPage.dart';
-//import 'package:hellotest04/screens_seedoc/DLoginSmsPage.dart';
 import 'package:hellotest04/screens_seedoc/DSignUpPage.dart';
 import 'package:hellotest04/screens_seedoc/DMenuPage.dart';
+
 
 void main() {
   runApp(MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -144,9 +145,11 @@ class _MyHomePageState extends State<MyHomePage> {
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => MySignUpPage()),);}, child: Text('My Sign-up (google)'),),      
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => MyResetPasswordPage()),);}, child: Text('My Reset Password (google)'),), 
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Ep2Page()),);}, child: Text('EP2-Layout Stateless'),),    
-          RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Ep4Page()),);}, child: Text('EP4-Statefull & List'),),   
-          RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => STLPage()),);}, child: Text('Stateless Page'),),   
-          RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => STFPage()),);}, child: Text('Statefull Widget Page'),), 
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Ep4Page()),);}, child: Text('EP4-Statefull & List'),),   
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => STLPage()),);}, child: Text('Stateless Page'),),   
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => STFPage()),);}, child: Text('Statefull Widget Page'),), 
+
+            
             Text(
               'You have pushed the button this many times:',
             ),
@@ -164,4 +167,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+
+
+
+
 }

@@ -1,15 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:hellotest04/services/LoggerService.dart';
-import 'package:hellotest04/services/ShowNotification.dart';
+// import 'package:hellotest04/services/ShowNotification.dart';
 //==================================================================================
 // FUNCTION: SIGNUP USER
 //==================================================================================  
-Future<void> dSubmitDoc(
+Future<void> dDocUpdate(
   //================================================================================
   // 1) PARAMETER: (1) PARA1: DATA, PARA2: DOCUMENT
   //================================================================================    
-  BuildContext context, Map<String, dynamic> data, String documentName){
+  BuildContext context, Map<String, dynamic> data, String documentName) async  {
     //==============================================================================
     // 2) RETURN 
     //==============================================================================       
@@ -21,7 +21,7 @@ Future<void> dSubmitDoc(
       //============================================================================
       // 4) SHOW MESSAGE AFTER SUCCESS
       //============================================================================         
-      showMessageBox(context, "success", "Submit Document($documentName) to Firestore Database completely", actions: [dismissButton(context)]);
+      // showMessageBox(context, "success", "Submit Document($documentName) to Firestore Database completely", actions: [dismissButton(context)]);
       logger.i("setData Success");
       //============================================================================
       //5)SHOW MESSAGE IF ERROR

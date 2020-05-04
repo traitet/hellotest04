@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hellotest04/screens_seedoc/DSearchDocPage.dart';
-import 'package:hellotest04/screens_seedoc/DViewDocPage.dart';
-import 'package:hellotest04/screens_seedoc/DCreateDocPage.dart';
+import 'package:hellotest04/screens_seedoc/DDocViewPage.dart';
+import 'package:hellotest04/screens_seedoc/DDocCreatePage.dart';
 import 'package:hellotest04/screens_seedoc/DLoginPage.dart';
-import 'package:hellotest04/screens_seedoc/DDocFlowSetup.dart';
+import 'package:hellotest04/screens_seedoc/DDocFlowSetupPage.dart';
 import 'package:hellotest04/screens_seedoc/DEditProfilePage.dart';
 
 import 'package:hellotest04/services_seedoc/DFirebaseAuth.dart' as MyFirebaseAuthen;
@@ -47,7 +47,7 @@ class _DNavDrawerState extends State<DNavDrawer> {
           //===================================================
           BuildListTile(
               "Create Document",
-              MaterialPageRoute(builder: (context) => DCreateDocPage()),
+              MaterialPageRoute(builder: (context) => DDocCreatePage()),
               Icon(Icons.book)),
           BuildListTile(
               "Doc Flow Setup",
@@ -55,7 +55,7 @@ class _DNavDrawerState extends State<DNavDrawer> {
               Icon(Icons.settings)),              
           BuildListTile(
               "View Document",
-              MaterialPageRoute(builder: (context) => DViewDocPage()),
+              MaterialPageRoute(builder: (context) => DDocViewPage(docid: "",)),
               Icon(Icons.view_list)),
           BuildListTile(
               "Search Document",

@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:hellotest04/screens/FlutterImagePickerPage.dart';
+import 'package:hellotest04/screens/SetDBFoodMenuPage.dart';
+import 'package:hellotest04/screens/UploadImagePage.dart';
+import 'package:hellotest04/screens_seedoc/DDocViewPage.dart';
 import 'package:hellotest04/screens_seedoc/DSearchDocPage.dart';
-import 'package:hellotest04/screens_seedoc/DViewDocPage.dart';
-import 'package:hellotest04/screens_seedoc/DCreateDocPage.dart';
+import 'package:hellotest04/screens_seedoc/DDocCreatePage.dart';
 import 'package:hellotest04/screens_seedoc/DLoginPage.dart';
 // import 'package:hellotest04/screens_seedoc/DSignUpPage.dart';
-import 'package:hellotest04/screens_seedoc/DDocFlowSetup.dart';
+import 'package:hellotest04/screens_seedoc/DDocFlowSetupPage.dart';
 import 'package:hellotest04/screens_seedoc/DEditProfilePage.dart';
 //import 'package:hellotest04/services/LoggerService.dart';
 
@@ -27,11 +30,17 @@ class _DCardMenuState extends State<DCardMenu> {
         padding: EdgeInsets.all(3.0),
         children: <Widget>[
           makeDashboardItem(context, "Create Document", Icons.book,
-              MaterialPageRoute(builder: (context) => DCreateDocPage())),
+              MaterialPageRoute(builder: (context) => DDocCreatePage())),
+          makeDashboardItem(context, "Flutter Image Picker ", Icons.videocam,
+              MaterialPageRoute(builder: (context) => FlutterImagePickerPage())),                
+          makeDashboardItem(context, "Upload Image ", Icons.book,
+              MaterialPageRoute(builder: (context) => UploadImagePage())),              
+          makeDashboardItem(context, "Upload Image and Menu", Icons.menu,
+              MaterialPageRoute(builder: (context) => SetDBFoodMenuPage())),              
           makeDashboardItem(context, "Doc Flow Setup", Icons.settings,
               MaterialPageRoute(builder: (context) => DDocFlowSetupPage())),              
           makeDashboardItem(context, "View Document", Icons.view_list,
-              MaterialPageRoute(builder: (context) => DViewDocPage())),
+              MaterialPageRoute(builder: (context) => DDocViewPage(docid: "",))),
           makeDashboardItem(context, "Search Document", Icons.search,
               MaterialPageRoute(builder: (context) => DSearchDocPage())),
           makeDashboardItem(context, "Profile", Icons.verified_user,
