@@ -5,6 +5,7 @@ import 'package:hellotest04/screens/UploadImagePage.dart';
 import 'package:hellotest04/screens_seedoc/DDocViewPage.dart';
 import 'package:hellotest04/screens_seedoc/DDocSearchPage.dart';
 import 'package:hellotest04/screens_seedoc/DDocCreatePage.dart';
+import 'package:hellotest04/screens_seedoc/DDocWfSettingPage.dart';
 import 'package:hellotest04/screens_seedoc/DLoginPage.dart';
 // import 'package:hellotest04/screens_seedoc/DSignUpPage.dart';
 import 'package:hellotest04/screens_seedoc/DDocFlowSetupPage.dart';
@@ -31,6 +32,8 @@ class _DCardMenuState extends State<DCardMenu> {
         children: <Widget>[
           makeDashboardItem(context, "Create Document", Icons.book,
               MaterialPageRoute(builder: (context) => DDocCreatePage())),
+          makeDashboardItem(context, "Setting Doc Workflow ", Icons.settings,
+              MaterialPageRoute(builder: (context) => DDocWfSettingPage())),                  
           makeDashboardItem(context, "Flutter Image Picker ", Icons.videocam,
               MaterialPageRoute(builder: (context) => FlutterImagePickerPage())),                
           makeDashboardItem(context, "Upload Image ", Icons.book,
