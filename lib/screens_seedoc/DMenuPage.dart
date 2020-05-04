@@ -24,7 +24,7 @@ class _DMenuPageState extends State<DMenuPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: DNavDrawer(),      
-      appBar: AppBar(title: Text( widget.username),),
+      appBar: AppBar(title: Text( widget.username??''),),
       body: DCardMenu(),
       
     );

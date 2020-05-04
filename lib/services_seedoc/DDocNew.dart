@@ -4,30 +4,36 @@ import '../services/LoggerService.dart';
 import '../services/ShowNotification.dart';
 //==================================================================================
 // FUNCTION: SIGNUP USER
-//==================================================================================  
-Future<void> dDocNew(
+//==================================================================================
+
+Future<void> dDocNew(BuildContext context, Map<String, dynamic> data,
+    String documentName) async {
   //================================================================================
-  // 1) PARAMETER: (1) PARA1: DATA, PARA2: DOCUMENT
-  //================================================================================    
-  BuildContext context, Map<String, dynamic> data, String documentName){
-    //==============================================================================
-    // 2) RETURN 
-    //==============================================================================       
-    return
-    //==============================================================================
-    // 3) CALL SET DATA (INSERT)
-    //==============================================================================       
-    Firestore.instance.collection("TT_DOCUMENT").document(documentName).setData(data).then((returnData) {
-      //============================================================================
-      // 4) SHOW MESSAGE AFTER SUCCESS
-      //============================================================================         
-      showMessageBox(context, "success", "Register Document($documentName) to Firestore Database completely", actions: [dismissButton(context)]);
-      logger.i("setData Success");
-      //============================================================================
-      //5)SHOW MESSAGE IF ERROR
-      //============================================================================         
-      }).catchError((e){
-        logger.e("setDAta Error");
-        logger.e(e);
-      });
-    }
+  // 1) DECLARE VARIABLE
+  //================================================================================
+  final _dbref = Firestore.instance;
+  //================================================================================
+  // 2) NEW DOCUMENT
+  //================================================================================
+//   DocumentReference ref = await _dbref.collection("TT_DOCUMENT").add(data);
+//   String _docId = ref.documentID;
+//   showMessageBox(context, "success",
+//       "Register Document($_docId) to Firestore Database completely",
+//       actions: [dismissButton(context)]);
+//   logger.i(ref.documentID);
+//   return ref.documentID.toString();
+// }
+
+//==============================================================================
+// SET DATA
+//==============================================================================
+_dbref.collection("TT_DOCUMENT").document(documentName).setData(data).then((returnData) {
+  showMessageBox(context, "success",
+      "Register Document($documentName) to Firestore Database completely",
+      actions: [dismissButton(context)]);
+  logger.i("setData Success");
+}).catchError((e) {
+  logger.e("setDAta Error");
+  logger.e(e);
+});
+}
