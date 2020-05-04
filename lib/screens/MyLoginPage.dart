@@ -98,7 +98,7 @@ class _MyLoginPageState extends State<MyLoginPage> {
         decoration: BoxDecoration(
             color: Colors.yellow[50], borderRadius: BorderRadius.circular(16)),
         child: TextField(
-            
+          
             controller: _emailController ,
             decoration: InputDecoration.collapsed(hintText: "Email"),
             style: TextStyle(fontSize: 18)));

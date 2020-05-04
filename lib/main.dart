@@ -15,6 +15,10 @@ import 'package:hellotest04/screens/StackPage.dart';
 import 'package:hellotest04/screens/UploadImagePage.dart';
 import 'package:hellotest04/screens/MyResetPasswordPage.dart';
 import 'package:hellotest04/screens/MyLoginPage.dart';
+import 'package:hellotest04/screens_seedoc/DLoginPage.dart';
+//import 'package:hellotest04/screens_seedoc/DLoginSmsPage.dart';
+import 'package:hellotest04/screens_seedoc/DSignUpPage.dart';
+import 'package:hellotest04/screens_seedoc/DMenuPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -120,6 +124,10 @@ class _MyHomePageState extends State<MyHomePage> {
             //================================================================
             // BUTTON
             //================================================================  
+            //RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => DLogininSmsPage()),);}, child: Text('See Doc Login (SMS)'),),   
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => DLoginPage()),);}, child: Text('See Doc Login'),),               
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => DSignUpPage()),);}, child: Text('See Sign Up'),),  
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => DMenuPage(username: 'traitet@',)),);}, child: Text('See Menu Page'),),              
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => CallApiUserPage()),);}, child: Text('Call Api User'),),   
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => CallApiDogPage()),);}, child: Text('Call Api Dog'),),      
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => ReadQRPage()),);}, child: Text('Read QR'),),        
