@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hellotest04/services/LoggerService.dart';
-import 'package:hellotest04/services/ShowNotification.dart';
-import 'package:hellotest04/services_seedoc/dDocNewWfSetting.dart';
+import '../services/LoggerService.dart';
+import '../services/ShowNotification.dart';
+import '../services_seedoc/dDocNewWfSetting.dart';
 
 class DDocWfSettingPage extends StatefulWidget {
   final String docid;

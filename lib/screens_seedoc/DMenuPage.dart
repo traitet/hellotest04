@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hellotest04/widgets_seedoc/DCardMenu.dart';
-import 'package:hellotest04/widgets_seedoc/DNavDrawer.dart';
+import '../widgets_seedoc/DCardMenu.dart';
+import '../widgets_seedoc/DNavDrawer.dart';
 
 
 class DMenuPage extends StatefulWidget {

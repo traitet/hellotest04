@@ -1,12 +1,12 @@
 import 'dart:io';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'package:hellotest04/screens_seedoc/DDocViewPage.dart';
-import 'package:hellotest04/screens_seedoc/DDocWfSettingPage.dart';
-import 'package:hellotest04/services/LoggerService.dart';
-import 'package:hellotest04/services_seedoc/DDocNew.dart';
-import 'package:hellotest04/services_seedoc/DDocUpdate.dart';
-import 'package:hellotest04/services/ShowNotification.dart';
+import '../screens_seedoc/DDocViewPage.dart';
+import '../screens_seedoc/DDocWfSettingPage.dart';
+import '../services/LoggerService.dart';
+import '../services_seedoc/DDocNew.dart';
+import '../services_seedoc/DDocUpdate.dart';
+import '../services/ShowNotification.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:path/path.dart' as Path;
 

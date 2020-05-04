@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:hellotest04/services/LoggerService.dart';
-import 'package:hellotest04/services/ShowNotification.dart';
+import '../services/LoggerService.dart';
+import '../services/ShowNotification.dart';
 
 //==========================================================================================
 // 1) MAIN CLASS

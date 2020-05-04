@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:hellotest04/screens_seedoc/DMenuPage.dart';
-import 'package:hellotest04/services/LoggerService.dart';
-import 'package:hellotest04/services/ShowNotification.dart';
+import '../screens_seedoc/DMenuPage.dart';
+import '../services/LoggerService.dart';
+import '../services/ShowNotification.dart';
 
 class DSignUpPage extends StatefulWidget {
   DSignUpPage({Key key}) : super(key: key);

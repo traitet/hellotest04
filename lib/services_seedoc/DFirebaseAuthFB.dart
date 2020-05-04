@@ -1,5 +1,5 @@
 import 'package:flutter_facebook_login/flutter_facebook_login.dart';
-import 'package:hellotest04/services/LoggerService.dart';
+import '../services/LoggerService.dart';
 
 final FacebookLogin facebookSignIn = new FacebookLogin();
 

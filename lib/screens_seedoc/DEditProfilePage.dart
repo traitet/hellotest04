@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hellotest04/services/LoggerService.dart';
-import 'package:hellotest04/services/ShowNotification.dart';
-import 'package:hellotest04/services/SignupUser.dart';
+import '../services/LoggerService.dart';
+import '../services/ShowNotification.dart';
+import '../services/SignupUser.dart';
 
 class DEditProfilePage extends StatefulWidget {
   @override

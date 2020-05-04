@@ -51,7 +51,7 @@ class _DNavDrawerState extends State<DNavDrawer> {
               Icon(Icons.book)),
           BuildListTile(
               "Doc Flow Setup",
-              MaterialPageRoute(builder: (context) => DDocWfSettingPage()),
+              MaterialPageRoute(builder: (context) => DDocWfSettingPage(docid: "",)),
               Icon(Icons.settings)),              
           BuildListTile(
               "View Document",

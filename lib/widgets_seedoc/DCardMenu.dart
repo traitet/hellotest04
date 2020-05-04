@@ -8,7 +8,6 @@ import 'package:hellotest04/screens_seedoc/DDocCreatePage.dart';
 import 'package:hellotest04/screens_seedoc/DDocWfSettingPage.dart';
 import 'package:hellotest04/screens_seedoc/DLoginPage.dart';
 import 'package:hellotest04/screens_seedoc/DEditProfilePage.dart';
-//import 'package:hellotest04/services/LoggerService.dart';
 
 class DCardMenu extends StatefulWidget {
   @override
@@ -31,7 +30,7 @@ class _DCardMenuState extends State<DCardMenu> {
           makeDashboardItem(context, "Create Document", Icons.book,
               MaterialPageRoute(builder: (context) => DDocCreatePage())),
           makeDashboardItem(context, "Setting Doc Workflow ", Icons.settings,
-              MaterialPageRoute(builder: (context) => DDocWfSettingPage())),                  
+              MaterialPageRoute(builder: (context) => DDocWfSettingPage(docid: "",))),                  
           makeDashboardItem(context, "Flutter Image Picker ", Icons.videocam,
               MaterialPageRoute(builder: (context) => FlutterImagePickerPage())),                
           makeDashboardItem(context, "Upload Image ", Icons.book,
@@ -39,7 +38,7 @@ class _DCardMenuState extends State<DCardMenu> {
           makeDashboardItem(context, "Upload Image and Menu", Icons.menu,
               MaterialPageRoute(builder: (context) => SetDBFoodMenuPage())),              
           makeDashboardItem(context, "Doc Flow Setup", Icons.settings,
-              MaterialPageRoute(builder: (context) => DDocWfSettingPage())),              
+              MaterialPageRoute(builder: (context) => DDocWfSettingPage(docid: "",))),              
           makeDashboardItem(context, "View Document", Icons.view_list,
               MaterialPageRoute(builder: (context) => DDocViewPage(docid: "",))),
           makeDashboardItem(context, "Search Document", Icons.search,
