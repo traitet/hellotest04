@@ -4,7 +4,8 @@ import 'package:hellotest04/services/ShowNotification.dart';
 import 'package:hellotest04/services_seedoc/dDocNewWfSetting.dart';
 
 class DDocWfSettingPage extends StatefulWidget {
-  DDocWfSettingPage({Key key}) : super(key: key);
+  final String docid;
+  DDocWfSettingPage({Key key,  @required  this.docid}) : super(key: key);
 
   @override
   _DDocWfSettingPageState createState() => _DDocWfSettingPageState();
@@ -29,7 +30,7 @@ class _DDocWfSettingPageState extends State<DDocWfSettingPage> {
         // APP BAR
         //======================================================================
         appBar: AppBar(
-          title: Text("Workflow Settup", style: TextStyle(color: Colors.white)),
+          title: Text("Workflow Settup: " , style: TextStyle(color: Colors.white)),
         ),
         //======================================================================
         // BODY
@@ -149,12 +150,13 @@ class _DDocWfSettingPageState extends State<DDocWfSettingPage> {
                 dDocNewWfSetting(
                     context,
                     {
+                      "docid": widget.docid,
                       "approve1": _approve1Controller.text,
                       "approve2": _approve2Controller.text,
                       "approve3": _approve3Controller.text,
                       "create_time": DateTime.now()
                     },
-                    "WF000001");
+                    widget.docid);
               }
 
         });

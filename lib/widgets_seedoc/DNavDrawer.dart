@@ -3,7 +3,7 @@ import 'package:hellotest04/screens_seedoc/DDocSearchPage.dart';
 import 'package:hellotest04/screens_seedoc/DDocViewPage.dart';
 import 'package:hellotest04/screens_seedoc/DDocCreatePage.dart';
 import 'package:hellotest04/screens_seedoc/DLoginPage.dart';
-import 'package:hellotest04/screens_seedoc/DDocFlowSetupPage.dart';
+import 'package:hellotest04/screens_seedoc/DDocWfSettingPage.dart';
 import 'package:hellotest04/screens_seedoc/DEditProfilePage.dart';
 
 import 'package:hellotest04/services_seedoc/DFirebaseAuth.dart' as MyFirebaseAuthen;
@@ -51,7 +51,7 @@ class _DNavDrawerState extends State<DNavDrawer> {
               Icon(Icons.book)),
           BuildListTile(
               "Doc Flow Setup",
-              MaterialPageRoute(builder: (context) => DDocFlowSetupPage()),
+              MaterialPageRoute(builder: (context) => DDocWfSettingPage()),
               Icon(Icons.settings)),              
           BuildListTile(
               "View Document",

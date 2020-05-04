@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:hellotest04/screens_seedoc/DDocViewPage.dart';
+import 'package:hellotest04/screens_seedoc/DDocWfSettingPage.dart';
 import 'package:hellotest04/services/LoggerService.dart';
 import 'package:hellotest04/services_seedoc/DDocNew.dart';
 import 'package:hellotest04/services_seedoc/DDocUpdate.dart';
@@ -241,9 +242,17 @@ void fnScan() {}
 // FUNCTION APPROVE
 //======================================================
 void fnConfig(BuildContext context, String myDocId) {
-  showMessageBox(context, "success", "Config Document($myDocId) completely",
-      actions: [dismissButton(context)]);
+
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+        builder: (context) => DDocWfSettingPage(
+              docid: myDocId,
+            )),
+  );
   logger.i("Config Success");
+    showMessageBox(context, "success", "Config Document($myDocId) completely",
+      actions: [dismissButton(context)]);
 }
 
 //======================================================

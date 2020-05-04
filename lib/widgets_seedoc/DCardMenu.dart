@@ -7,8 +7,6 @@ import 'package:hellotest04/screens_seedoc/DDocSearchPage.dart';
 import 'package:hellotest04/screens_seedoc/DDocCreatePage.dart';
 import 'package:hellotest04/screens_seedoc/DDocWfSettingPage.dart';
 import 'package:hellotest04/screens_seedoc/DLoginPage.dart';
-// import 'package:hellotest04/screens_seedoc/DSignUpPage.dart';
-import 'package:hellotest04/screens_seedoc/DDocFlowSetupPage.dart';
 import 'package:hellotest04/screens_seedoc/DEditProfilePage.dart';
 //import 'package:hellotest04/services/LoggerService.dart';
 
@@ -41,7 +39,7 @@ class _DCardMenuState extends State<DCardMenu> {
           makeDashboardItem(context, "Upload Image and Menu", Icons.menu,
               MaterialPageRoute(builder: (context) => SetDBFoodMenuPage())),              
           makeDashboardItem(context, "Doc Flow Setup", Icons.settings,
-              MaterialPageRoute(builder: (context) => DDocFlowSetupPage())),              
+              MaterialPageRoute(builder: (context) => DDocWfSettingPage())),              
           makeDashboardItem(context, "View Document", Icons.view_list,
               MaterialPageRoute(builder: (context) => DDocViewPage(docid: "",))),
           makeDashboardItem(context, "Search Document", Icons.search,
