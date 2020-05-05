@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:hellotest04/screens/CallApiDogPage.dart';
-import 'package:hellotest04/screens/CallApiUserPage.dart';
-import 'package:hellotest04/screens/Ep2Page.dart';
-import 'package:hellotest04/screens/Ep4Page.dart';
-import 'package:hellotest04/screens/MySignUpPage.dart';
-import 'package:hellotest04/screens/ReadQRPage.dart';
-import 'package:hellotest04/screens/RegisterProduct.dart';
-import 'package:hellotest04/screens/STFWidget.dart';
-import 'package:hellotest04/screens/STLPage.dart';
-import 'package:hellotest04/screens/SearchPage.dart';
-import 'package:hellotest04/screens/SearchProductPage.dart';
-import 'package:hellotest04/screens/SignupPage.dart';
-import 'package:hellotest04/screens/StackPage.dart';
-import 'package:hellotest04/screens/UploadImagePage.dart';
-import 'package:hellotest04/screens/MyResetPasswordPage.dart';
-import 'package:hellotest04/screens/MyLoginPage.dart';
-import 'package:hellotest04/screens_seedoc/DLoginPage.dart';
-import 'package:hellotest04/screens_seedoc/DSignUpPage.dart';
-import 'package:hellotest04/screens_seedoc/DMenuPage.dart';
+import './screens/CallApiDogPage.dart';
+import './screens/CallApiUserPage.dart';
+import './screens/Ep2Page.dart';
+import './screens/Ep4Page.dart';
+import './screens/MySignUpPage.dart';
+import './screens/ReadQRPage.dart';
+import './screens/RegisterProduct.dart';
+import './screens/STFWidget.dart';
+import './screens/STLPage.dart';
+import './screens/SearchPage.dart';
+import './screens/SearchProductPage.dart';
+import './screens/SignupPage.dart';
+import './screens/StackPage.dart';
+import './screens/UploadImagePage.dart';
+import './screens/MyResetPasswordPage.dart';
+import './screens/MyLoginPage.dart';
+import './screens_seedoc/DLoginPage.dart';
+import './screens_seedoc/DSignUpPage.dart';
+import './screens_seedoc/DMenuPage.dart';
 
 
 void main() {

@@ -400,7 +400,7 @@ Widget widgetBodyText = Container(
                 padding: const EdgeInsets.only(bottom: 8),
                 child: Container(
                   child: Text(
-                    "E-Document: 5 Mar 2020, 13:30",
+                    "This is a book",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),

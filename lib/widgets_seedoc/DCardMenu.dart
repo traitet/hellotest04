@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:hellotest04/screens/FlutterImagePickerPage.dart';
-import 'package:hellotest04/screens/SetDBFoodMenuPage.dart';
-import 'package:hellotest04/screens/UploadImagePage.dart';
-import 'package:hellotest04/screens_seedoc/DDocViewPage.dart';
-import 'package:hellotest04/screens_seedoc/DDocSearchPage.dart';
-import 'package:hellotest04/screens_seedoc/DDocCreatePage.dart';
-import 'package:hellotest04/screens_seedoc/DDocWfSettingPage.dart';
-import 'package:hellotest04/screens_seedoc/DLoginPage.dart';
-import 'package:hellotest04/screens_seedoc/DEditProfilePage.dart';
+import '../screens/FlutterImagePickerPage.dart';
+import '../screens/SetDBFoodMenuPage.dart';
+import '../screens/UploadImagePage.dart';
+import '../screens_seedoc/DDocViewPage.dart';
+import '../screens_seedoc/DDocSearchPage.dart';
+import '../screens_seedoc/DDocCreatePage.dart';
+import '../screens_seedoc/DDocWfSettingPage.dart';
+import '../screens_seedoc/DLoginPage.dart';
+import '../screens_seedoc/DEditProfilePage.dart';
 
 class DCardMenu extends StatefulWidget {
   @override

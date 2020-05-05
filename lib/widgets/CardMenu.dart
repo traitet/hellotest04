@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-// import 'package:hellotest04/main.dart';
-// import 'package:hellotest04/screens/LayoutPage.dart';
-// import 'package:hellotest04/screens/LoginPage.dart';
-// import 'package:hellotest04/screens/MenuPage.dart';
-import 'package:hellotest04/screens/MyResetPasswordPage.dart';
-import 'package:hellotest04/screens/MySignUpPage.dart';
-// import 'package:hellotest04/screens/SearchFoodMenuPage.dart';
-import 'package:hellotest04/screens/SearchPage.dart';
-// import 'package:hellotest04/screens/SetDBFoodMenuPage.dart';
-import 'package:hellotest04/screens/SignupPage.dart';
-import 'package:hellotest04/screens/StackPage.dart';
+// import '../main.dart';
+// import '../screens/LayoutPage.dart';
+// import '../screens/LoginPage.dart';
+// import '../screens/MenuPage.dart';
+import '../screens/MyResetPasswordPage.dart';
+import '../screens/MySignUpPage.dart';
+// import '../screens/SearchFoodMenuPage.dart';
+import '../screens/SearchPage.dart';
+// import '../screens/SetDBFoodMenuPage.dart';
+import '../screens/SignupPage.dart';
+import '../screens/StackPage.dart';
 
 class CardMenu extends StatefulWidget {
   @override
